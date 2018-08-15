@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Task } from '../models/task.model';
 
 @Component({
@@ -8,7 +8,6 @@ import { Task } from '../models/task.model';
 })
 
 export class NewTaskComponent {
-  @Input() showNewTask: boolean;
   @Output() sendTask = new EventEmitter();
 
   submitForm(description: string, priority: string) {

@@ -4,7 +4,6 @@
     <option value="completedTasks">Completed Tasks</option>
     <option value="incompleteTasks" selected="selected">Incomplete Tasks</option>
   </select>
-  <button class="btn btn-med btn-default" (click)="addButtonClicked()">Add Task</button>
 </div>
 <ul>
   <li [class]="priorityColor(currentTask)" *ngFor="let currentTask of childTaskList | completeness:filterByCompleteness">{{currentTask.description}} {{currentTask.priority}}
