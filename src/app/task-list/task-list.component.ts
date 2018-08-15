@@ -10,17 +10,10 @@ import { Task } from '../models/task.model';
 export class TaskListComponent {
   @Input() childTaskList: Task[];
   @Output() editClickSender = new EventEmitter();
-  @Output() addClickSender = new EventEmitter();
   filterByCompleteness: string = "incompleteTasks";
 
   editButtonClicked(taskToEdit: Task) {
     this.editClickSender.emit(taskToEdit);
-  }
-
-  addButtonClicked() {
-    console.log('clicked!');
-    let showTaskForm = true;
-    this.addClickSender.emit(showTaskForm);
   }
 
   priorityColor(currentTask) {
