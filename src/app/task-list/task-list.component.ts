@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../models/task.model';
 
 @Component({
@@ -6,17 +6,18 @@ import { Task } from '../models/task.model';
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css']
 })
+
 export class TaskListComponent implements OnInit {
+  @Input() childTaskList: Task[];
+  @Output() clickSender = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
   }
 
-  tasks: Task[] = [
-    new Task('Finish weekend Angular homework for Epicodus course', 3),
-    new Task('Begin brainstorming possible JavaScript group projects', 3),
-    new Task('Add README file to last few Angular repos on GitHub', 2)
-  ]
+  editButtonClicked(taskToEdit: Task) {
+    this.clickSender.emit(taskToEdit);
+  }
 
   priorityColor(currentTask) {
     if (parseInt(currentTask.priority) === 3) {

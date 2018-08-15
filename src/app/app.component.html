@@ -1,6 +1,6 @@
 <h1>To Do List for {{month}}/{{day}}/{{year}}</h1>
 <h3>{{currentFocus}}</h3>
-<app-task-list></app-task-list>
+<app-task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></app-task-list>
 
 <div *ngIf="selectedTask">
   <h3>{{selectedTask.description}}</h3>

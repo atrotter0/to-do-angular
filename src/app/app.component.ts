@@ -6,6 +6,7 @@ import { Task } from './models/task.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   currentFocus: string = 'Angular Homework';
   currentTime = new Date();
