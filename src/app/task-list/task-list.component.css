@@ -1,10 +1,14 @@
+.task-options-block {
+  margin-bottom: 20px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.task-status-box {
+.task-status-block {
   float: left;
   margin-right: 10px;
 }

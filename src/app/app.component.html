@@ -1,6 +1,6 @@
 <h1>To Do List</h1>
 <h2>{{month}}/{{day}}/{{year}}</h2>
 <h3>{{currentFocus}}</h3>
-<app-task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></app-task-list>
+<app-task-list [childTaskList]="masterTaskList" (editClickSender)="editTask($event)" (newClickSender)="showTaskForm($event)"></app-task-list>
 <app-edit-task [selectedTask]="selectedTask" (clickedDone)="finishedEditing()"></app-edit-task>
-<app-new-task (sendTask)="addTask($event)"></app-new-task>
+<app-new-task [showNewTask]="showNewTask" (sendTask)="addTask($event)"></app-new-task>

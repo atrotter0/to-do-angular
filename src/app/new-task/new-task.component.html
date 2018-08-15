@@ -1,14 +1,16 @@
-<h3>New Task</h3>
-<div class="form-group">
- <label>Enter Task Description:</label>
- <input #newDescription class="form-control">
-</div>
-<div class="form-group">
-  <label>Task Priority:</label>
-  <select #newPriority class="form-control">
-    <option [value]="1"> Low Priority </option>
-    <option [value]="2"> Medium Priority </option>
-    <option [value]="3"> High Priority </option>
-  </select>
-  <button class="btn btn-lg btn-secondary" (click)="submitForm(newDescription.value, newPriority.value); newDescription.value='';">Add</button>
+<div *ngIf="showNewTask">
+  <h3>New Task</h3>
+  <div class="form-group">
+  <label>Enter Task Description:</label>
+  <input #newDescription class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Task Priority:</label>
+    <select #newPriority class="form-control">
+      <option [value]="1"> Low Priority </option>
+      <option [value]="2"> Medium Priority </option>
+      <option [value]="3"> High Priority </option>
+    </select>
+    <button class="btn btn-lg btn-default" (click)="submitForm(newDescription.value, newPriority.value); newDescription.value='';">Add</button>
+  </div>
 </div>

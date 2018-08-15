@@ -14,6 +14,7 @@ export class AppComponent {
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
   selectedTask = null;
+  showNewTask = null;
 
   masterTaskList: Task[] = [
     new Task('Finish weekend Angular homework for Epicodus course', 3),
@@ -21,7 +22,13 @@ export class AppComponent {
     new Task('Add README file to last few Angular repos on GitHub', 2)
   ];
 
+  showTaskForm(shouldShowTask: boolean) {
+    console.log("made it to newTask");
+    this.showNewTask = shouldShowTask;
+  }
+
   addTask(newTask: Task) {
+    this.showNewTask = null;
     this.masterTaskList.push(newTask);
   }
 
