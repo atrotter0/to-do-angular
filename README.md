@@ -1,27 +1,47 @@
-# To Do With Angular
+# To-Do List with Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### Epicodus Angular assignment, 08.12.18
 
-## Development server
+#### By Abel Trotter
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+A simple To-Do List built with Angular. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup on OSX
 
-## Build
+* Install Node.js.
+* Install Angular CLI 1.6.5.
+* Clone the project repo.
+* Run `npm install` from project directory.
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* Run `ng test` to execute the unit tests via Karma.
+* Run `ng e2e` to execute the end-to-end tests via Protractor.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Contribution Requirements
 
-## Running unit tests
+1. Clone the repo
+1. Make a new branch
+1. Commit and push your changes
+1. Create a PR
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
 
-## Running end-to-end tests
+* HTML5/CSS3
+* Bootstrap
+* Font Awesome
+* ES6
+* Typescipt
+* Node.js
+* Angular v5.2.0
+* Jasmine
+* Karma
+* Protractor
+* TSLint
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## License
 
-## Further help
+This software is licensed under the MIT license.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2018 **Abel Trotter**
